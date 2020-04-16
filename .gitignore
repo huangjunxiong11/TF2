@@ -131,4 +131,3 @@ dmypy.json
 # self-ignore
 .idea
 AlexNet/pokeman
-AlexNet/data

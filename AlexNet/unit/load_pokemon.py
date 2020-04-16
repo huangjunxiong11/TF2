@@ -1,3 +1,4 @@
+# coding=utf-8
 import os
 from load_csv import load_csv
 
@@ -23,5 +24,6 @@ def load_pokemon(root, mode='train'):
     return images, labels, name2label
 
 
-if __name__ == '__main__':
-    load_pokemon('../pokeman')
+# if __name__ == '__main__':
+#     images, labels, name2label = load_pokemon('../pokeman')
+#     pass

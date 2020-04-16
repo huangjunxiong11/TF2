@@ -131,3 +131,4 @@ dmypy.json
 # self-ignore
 .idea
 AlexNet/pokeman
+googleNet/flower_data

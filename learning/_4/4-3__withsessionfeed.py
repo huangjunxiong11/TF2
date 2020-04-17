@@ -18,4 +18,4 @@ with tf.Session(config=config) as sess:
     # Run every operation with variable input
     print("jia: %i" % sess.run(add, feed_dict={a: 3, b: 4}))
     print("cheng: %i" % sess.run(mul, feed_dict={a: 3, b: 4}))
-    print( sess.run([add, mul], feed_dict={a: 3, b: 4}))
+    print(sess.run([add, mul], feed_dict={a: 3, b: 4}))

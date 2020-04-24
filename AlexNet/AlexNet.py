@@ -92,12 +92,15 @@ def preprocess(image_path, label):
 
 
 # 1.加载自定义数据集
-images, labels, table = load_pokemon('pokemon', 'train')
+images, labels, table = load_pokemon('pokeman', 'train')
 print('images', len(images), images)
 print('labels', len(labels), labels)
 print(table)
 db = tf.data.Dataset.from_tensor_slices((images, labels))  # images: string path， labels: number
-db = db.shuffle(1000).map(preprocess).batch(32).repeat(20)
+shu = db.shuffle(1000)
+Map = shu.map(preprocess)
+bat = Map.batch(32)
+db = bat.repeat(20)
 
 # 2.网络搭建
 network = Sequential([

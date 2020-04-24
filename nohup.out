@@ -1,0 +1,151 @@
+[I 15:05:42.584 NotebookApp] JupyterLab extension loaded from /home/huangjx/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 15:05:42.584 NotebookApp] JupyterLab application directory is /home/huangjx/anaconda3/share/jupyter/lab
+[I 15:05:42.589 NotebookApp] 启动notebooks 在本地路径: /home/huangjx/Projects/git-pro/TF2/TF2
+[I 15:05:42.589 NotebookApp] 本程序运行在: http://localhost:8888/?token=08fc532663cfd906a0b25eda6ffd0952390025776f11ef91
+[I 15:05:42.589 NotebookApp]  or http://127.0.0.1:8888/?token=08fc532663cfd906a0b25eda6ffd0952390025776f11ef91
+[I 15:05:42.589 NotebookApp] 使用control-c停止此服务器并关闭所有内核(两次跳过确认).
+[C 15:05:42.661 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/huangjx/.local/share/jupyter/runtime/nbserver-15812-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=08fc532663cfd906a0b25eda6ffd0952390025776f11ef91
+     or http://127.0.0.1:8888/?token=08fc532663cfd906a0b25eda6ffd0952390025776f11ef91
+[E 15:05:44.021 NotebookApp] Could not open static file ''
+[W 15:05:44.096 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 5.61ms referer=http://localhost:8888/tree?token=08fc532663cfd906a0b25eda6ffd0952390025776f11ef91
+[I 15:05:50.911 NotebookApp] Creating new notebook in /Numpy
+[W 15:05:52.597 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 6.16ms referer=http://localhost:8888/notebooks/Numpy/%E6%9C%AA%E5%91%BD%E5%90%8D.ipynb?kernel_name=python3
+[W 15:05:52.632 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.60ms referer=http://localhost:8888/notebooks/Numpy/%E6%9C%AA%E5%91%BD%E5%90%8D.ipynb?kernel_name=python3
+[I 15:05:53.616 NotebookApp] Kernel started: 83a23f85-5b98-4076-afba-0614b4c0cbed
+[I 15:05:54.293 NotebookApp] Adapting from protocol version 5.1 (kernel 83a23f85-5b98-4076-afba-0614b4c0cbed) to 5.3 (client).
+[I 15:07:53.032 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:09:53.003 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:11:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:13:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:15:53.008 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:17:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:19:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:21:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:23:53.006 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:25:53.006 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:27:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:29:53.035 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:31:53.007 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:33:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:45:53.006 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:47:53.003 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:49:53.007 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:51:53.028 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:53:53.006 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:55:21.307 NotebookApp] Starting buffering for 83a23f85-5b98-4076-afba-0614b4c0cbed:7132761e62b446c78663519a4d294de1
+[I 15:55:21.612 NotebookApp] Kernel restarted: 83a23f85-5b98-4076-afba-0614b4c0cbed
+[I 15:55:21.940 NotebookApp] Adapting from protocol version 5.1 (kernel 83a23f85-5b98-4076-afba-0614b4c0cbed) to 5.3 (client).
+[I 15:55:21.941 NotebookApp] Restoring connection for 83a23f85-5b98-4076-afba-0614b4c0cbed:7132761e62b446c78663519a4d294de1
+[I 15:55:21.941 NotebookApp] Replaying 10 buffered messages
+[I 15:55:53.007 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:57:52.995 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 15:59:53.035 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 16:01:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 16:03:53.005 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 16:05:53.004 NotebookApp] Saving file at /Numpy/Numpy数据处理.ipynb
+[I 16:08:27.996 NotebookApp] Creating new notebook in /Numpy
+[W 16:08:28.375 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.50ms referer=http://localhost:8888/notebooks/Numpy/%E6%9C%AA%E5%91%BD%E5%90%8D.ipynb?kernel_name=python3
+[W 16:08:28.393 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.07ms referer=http://localhost:8888/notebooks/Numpy/%E6%9C%AA%E5%91%BD%E5%90%8D.ipynb?kernel_name=python3
+[I 16:08:28.762 NotebookApp] Kernel started: 3662df7a-4849-438d-89da-e72ea45b83fe
+[I 16:08:29.143 NotebookApp] Adapting from protocol version 5.1 (kernel 3662df7a-4849-438d-89da-e72ea45b83fe) to 5.3 (client).
+[I 16:10:28.772 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:14:28.774 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:16:28.801 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:18:28.773 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:20:28.773 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:24:28.773 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:26:28.773 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:28:28.777 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:30:28.774 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:32:28.773 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:40:31.390 NotebookApp] Creating new notebook in /Numpy
+[W 16:40:31.793 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.37ms referer=http://localhost:8888/notebooks/Numpy/%E6%9C%AA%E5%91%BD%E5%90%8D.ipynb?kernel_name=python3
+[W 16:40:31.807 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.30ms referer=http://localhost:8888/notebooks/Numpy/%E6%9C%AA%E5%91%BD%E5%90%8D.ipynb?kernel_name=python3
+[I 16:40:32.132 NotebookApp] Kernel started: 86fdcd73-4be0-4e89-99ae-7e33f671750e
+[I 16:40:32.523 NotebookApp] Adapting from protocol version 5.1 (kernel 86fdcd73-4be0-4e89-99ae-7e33f671750e) to 5.3 (client).
+[I 16:42:32.142 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 16:44:32.143 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 17:56:32.176 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 17:58:32.512 NotebookApp] Saving file at /Numpy/未命名.ipynb
+[I 18:13:50.249 NotebookApp] Starting buffering for 3662df7a-4849-438d-89da-e72ea45b83fe:3a7a756c73c543dc9d911af51696f5ad
+[I 18:13:50.249 NotebookApp] Starting buffering for 83a23f85-5b98-4076-afba-0614b4c0cbed:7132761e62b446c78663519a4d294de1
+[I 18:13:50.250 NotebookApp] Starting buffering for 86fdcd73-4be0-4e89-99ae-7e33f671750e:75db2c82c3d444e18db00bc6f67a05ac
+[I 13:49:48.018 NotebookApp] JupyterLab extension loaded from /home/huangjx/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 13:49:48.018 NotebookApp] JupyterLab application directory is /home/huangjx/anaconda3/share/jupyter/lab
+[I 13:49:48.019 NotebookApp] 启动notebooks 在本地路径: /home/huangjx/Projects/git-pro/TF2/TF2
+[I 13:49:48.019 NotebookApp] 本程序运行在: http://localhost:8888/?token=a1546fa9b8328e91496473a42eae643111a404046b301658
+[I 13:49:48.019 NotebookApp]  or http://127.0.0.1:8888/?token=a1546fa9b8328e91496473a42eae643111a404046b301658
+[I 13:49:48.019 NotebookApp] 使用control-c停止此服务器并关闭所有内核(两次跳过确认).
+[C 13:49:48.048 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/huangjx/.local/share/jupyter/runtime/nbserver-6343-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=a1546fa9b8328e91496473a42eae643111a404046b301658
+     or http://127.0.0.1:8888/?token=a1546fa9b8328e91496473a42eae643111a404046b301658
+[E 13:49:49.372 NotebookApp] Could not open static file ''
+[W 13:49:49.481 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 47.69ms referer=http://localhost:8888/tree?token=a1546fa9b8328e91496473a42eae643111a404046b301658
+[W 13:49:49.546 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 4.46ms referer=http://localhost:8888/tree?token=a1546fa9b8328e91496473a42eae643111a404046b301658
+[I 13:50:08.794 NotebookApp] Creating new notebook in /Numpy
+[W 13:50:10.603 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.49ms referer=http://localhost:8888/notebooks/Numpy/%E6%9C%AA%E5%91%BD%E5%90%8D1.ipynb?kernel_name=python3
+[W 13:50:10.658 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.05ms referer=http://localhost:8888/notebooks/Numpy/%E6%9C%AA%E5%91%BD%E5%90%8D1.ipynb?kernel_name=python3
+[I 13:50:11.365 NotebookApp] Kernel started: 945dfbac-b685-4aaa-9e91-c0e22c9680bc
+[I 13:50:11.989 NotebookApp] Adapting from protocol version 5.1 (kernel 945dfbac-b685-4aaa-9e91-c0e22c9680bc) to 5.3 (client).
+[I 13:52:11.269 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 14:46:06.616 NotebookApp] JupyterLab extension loaded from /home/huangjx/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 14:46:06.616 NotebookApp] JupyterLab application directory is /home/huangjx/anaconda3/share/jupyter/lab
+[I 14:46:06.617 NotebookApp] 启动notebooks 在本地路径: /home/huangjx/Projects/git-pro/TF2/TF2
+[I 14:46:06.617 NotebookApp] 本程序运行在: http://localhost:8888/?token=e17ec6673a8832066a3504bfbc7a01b6d0ecb8b44f9ba04a
+[I 14:46:06.617 NotebookApp]  or http://127.0.0.1:8888/?token=e17ec6673a8832066a3504bfbc7a01b6d0ecb8b44f9ba04a
+[I 14:46:06.617 NotebookApp] 使用control-c停止此服务器并关闭所有内核(两次跳过确认).
+[C 14:46:06.629 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/huangjx/.local/share/jupyter/runtime/nbserver-14390-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=e17ec6673a8832066a3504bfbc7a01b6d0ecb8b44f9ba04a
+     or http://127.0.0.1:8888/?token=e17ec6673a8832066a3504bfbc7a01b6d0ecb8b44f9ba04a
+[E 14:46:07.853 NotebookApp] Could not open static file ''
+[W 14:46:07.871 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 5.05ms referer=http://localhost:8888/tree?token=e17ec6673a8832066a3504bfbc7a01b6d0ecb8b44f9ba04a
+[W 14:46:07.878 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.04ms referer=http://localhost:8888/tree?token=e17ec6673a8832066a3504bfbc7a01b6d0ecb8b44f9ba04a
+[W 14:46:21.459 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.44ms referer=http://localhost:8888/notebooks/Numpy/%E4%BD%8E%E9%98%B6API.ipynb
+[W 14:46:21.477 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.15ms referer=http://localhost:8888/notebooks/Numpy/%E4%BD%8E%E9%98%B6API.ipynb
+[I 14:46:21.917 NotebookApp] Kernel started: 68fa705d-1780-433f-adb4-3fd78643243e
+[I 14:46:22.300 NotebookApp] Adapting from protocol version 5.1 (kernel 68fa705d-1780-433f-adb4-3fd78643243e) to 5.3 (client).
+2020-04-24 14:46:45.105815: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-24 14:46:45.129280: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3000000000 Hz
+2020-04-24 14:46:45.129553: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558da62f8870 executing computations on platform Host. Devices:
+2020-04-24 14:46:45.129572: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+[I 14:48:21.920 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 14:50:21.922 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 14:52:21.921 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 14:54:21.922 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 14:56:21.948 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 14:58:21.944 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:00:21.921 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:02:21.923 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:04:21.923 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:06:21.927 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:08:21.952 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:10:21.954 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:12:21.923 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:14:21.928 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:16:21.918 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:18:21.923 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:20:21.946 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:26:21.936 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:28:21.924 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:30:21.924 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:32:21.923 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:38:21.929 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:40:21.923 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:42:21.923 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:44:21.951 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:46:21.951 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:48:21.925 NotebookApp] Saving file at /Numpy/低阶API.ipynb
+[I 15:50:21.922 NotebookApp] Saving file at /Numpy/低阶API.ipynb

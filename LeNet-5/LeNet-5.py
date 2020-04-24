@@ -23,7 +23,6 @@ network = Sequential([  # 搭建网络容器
     layers.MaxPooling2D(pool_size=2, strides=2),  # 池化层
     layers.ReLU(),  # 激活函数
     layers.Flatten(),  # 拉直，方便全连接层处理
-
     layers.Dense(120, activation='relu'),  # 全连接层，120个节点
     layers.Dense(84, activation='relu'),  # 全连接层，84个节点
     layers.Dense(10)  # 输出层，10个节点

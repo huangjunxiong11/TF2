@@ -1,0 +1,391 @@
+一、操作系统
+1、操作系统作用
+    是计算机系统最重要的系统软件
+
+    是现代计算机系统中 最基本和最重要 的系统软件
+    承上启下的作用
+    向下对硬件操作进行封装
+    向上对用户和应用程序提供方便访问硬件的接口
+
+    操作系统 的应用 领域：
+        桌面操作系统
+        服务器操作系统
+        嵌入式操作系统
+        移动设备操作系统
+
+2、虚拟机
+    虚拟出来的计算机系统：
+    硬件系统:  vmware
+    软件系统: 操作系统（ubuntu）+ 应用软件（谷歌）
+
+3、linux操作系统
+
+    a. linux操作系统的发展史 
+        unix   --  minix --  linux
+        linux 由林纳斯·托瓦兹 1991年 研发
+
+    b. linux内核版与发行版
+        发行版：
+            1. ubuntu
+            2. debian
+            3. centos
+            4. red hat
+            5. android
+
+        拓展题目：(仅做了解)
+            ubuntu 与 debian的区别
+                1. ubuntu源于debian，debian是商业版，ubuntu是社区版(完全免费)
+                ubuntu桌面非常友好，软件更新很快
+                2. centos源于red hat，red hat是商业版，centos是社区版(完全免费)
+                centos比ubuntu更稳定，桌面不友好，软件更新慢
+
+    c. linux的应用领域
+        1. 服务器
+        2. 嵌入式
+        3. 桌面(ubuntu)
+        4. 移动(android 内核 linux)
+
+4、ubuntu图形界面操作
+
+
+5、linux文件和目录
+    文件的访问权限：不同的用户对同一个文件访问权限是有差异的
+
+    1. 单用户与多用户操作系统
+        指一台计算机在同一时间可以由多个用户使用
+        现在操作系统都是多用户的操作系统
+        
+        文件的访问权限：不同用户对同一个文件访问权限是有差异的
+
+
+    2. linux文件系统
+
+        a. 根目录"/"
+            所有文件都是在 "/"根目录下
+
+        b. 用户家目录、用户工作目录
+            /home/用户名
+            /home/python
+            ~：简写
+
+
+        c. (仅做了解)根目录下面的以及子目录介绍
+            1. /: 根目录
+            2. /home/python: 用户家目录、用户工作目录
+            3. /bin: 可执行二进制文件目录
+            4. /opt: 安装额外软件的目录
+                apt-get: 在线安装
+            5. /ect: 存放配置文件的目录
+
+
+三、常见的linux命令01
+
+终端命令格式:
+    python@ubuntu:~$ 
+    用户名@系统: 当前所在路径$
+
+1、ls：    list列出文件列表信息
+    格式：  ls [-options] [parameter]
+            ls [选项]... [文件]
+
+    a. 常用选项：
+    -l: 详细查看
+    -a: 查看所有文件 (隐藏和非隐藏文件都查看)
+    -h: 与 -l一起使用、以更人性化的方式显示文件大小
+
+    问题1：详细查看家目录下的文件
+    (当前所在目录是桌面)  ls -l /home/python
+        简写  ls -l ~
+
+    问题2：查看家目录下的所有文件
+    (当前所在目录是桌面)   ls -a ~
+
+    问题3：详细查看家目录下的文件，并且以友好方式显示文件大小
+    (当前所在目录是桌面)  ls -lh ~
+
+
+
+    b. 文件列表详情(面试问题)   ls -l
+        drwxrwxr-x 1 python python   4096 6月   5 21:07 python高级
+
+        第一个字符： d表示 文件夹， -表示普通文件   l表示软链接文件
+        第一个python  属主用户，创建这个文件的用户
+        第二个python   属主用户所在的用户组
+
+    c. 通配符
+        1 * :    代表0个或者多个任意字符
+            问题1： 查看/bin目录中以r开头的所有文件
+                ls /bin/r*
+
+                
+        2 ？:   代表1个任意字符
+            问题2： 查看/bin目录中以r开头的只有两个字符的文件
+                ls /bin/r?
+
+
+
+2、clear：   清除命令终端的屏幕
+    快捷方式   Ctrl+L
+
+3、pwd：  print work directory  显示当前的工作目录
+
+4、cd：       切换到指定目录
+    1、相对路径和绝对路径
+        相对路径：相对于当前的路径
+        .   当前目录
+        ..   上一级目录
+        目录/    该目录的下一级
+
+
+
+        绝对路径：以根目录开始的路径
+        /   根目录
+
+
+        问题1：分别以相对路径和绝对路径进入到桌面目录中
+            （当前目录是用户家目录）
+            相对路径  cd ./Desktop/
+            绝对路径  cd /home/python/Desktop/
+
+            
+
+        问题2：分别以相对路径和绝对路径进入/bin目录中
+            （当前目录是用户家目录）
+            相对路径  cd ../../bin
+            绝对路径 cd /bin
+
+
+    2、常用的目录切换
+        1、cd .
+        2、cd ..   切换到 上一级目录
+        3、cd ~    迅速切换到家目录
+        4、cd -    切换到 上一次目录
+        5、cd /    切换到根目录
+
+
+
+5、mkdir：make directory  创建目录
+    格式： mkdir [选项]...  目录...
+
+    问题1: 在桌面创建python11目录
+        (当前目录是桌面) mkdir python11
+
+    问题2：在python11目录中一次创建a/b/c   级联目录
+        (当前目录是python11)   mkdir a/b/c -p
+
+6、touch： 创建文件
+    格式： touch [选项]...  文件...
+
+    问题1: 在桌面的python11目录中创建info.txt文件
+        (当前目录是python11)   touch info.txt
+
+
+    问题2: 在桌面的python11目录中一次创建a.py, b.py, c.py三个文件
+        (当前目录是python11)  touch a.py b.py c.py
+
+
+7、rm：    remove删除文件或者文件夹
+    格式： rm [选项]...  文件...
+
+    选项
+    -i 删除文件时候给予提示（确认是否删除）
+    -f 强制删除，假如要删除的文件不存在 ，也不会有提示
+    -r 递归删除，假如要删除的目录，则必须带该选项
+
+    问题1：删除桌面的python11目录中a.py的文件
+        (当前目录是python11)  rm a.py 
+
+
+    问题2：删除桌面的python11目录中的a目录
+        (当前目录是python11)   rm -r a
+
+
+8、cp：    拷贝、复制
+    格式   cp[选项]   <源文件>   <目标文件>
+    （当前的目录是Desktop/python11）
+    问题1：拷贝桌面的python11目录的info.txt到当前a目录下
+        (当前目录是python11)  cp info.txt a/
+
+
+    问题2：拷贝桌面python11目录的info.txt到当前a目录下，且改名为info_backup.txt
+        (当前目录是python11)  cp info.txt a/info_backup.txt
+
+
+    问题3：拷贝当前a目录到桌面
+        (当前目录是python11)  cp a ../ -r
+        注意： 拷贝目录也需要加选项-r
+
+
+9、mv:    移动到、重命名
+    格式  mv <源文件>    <目标文件|目标文件夹>
+
+    （当前的目录是Desktop/python11）
+    问题1： 把桌面python11目录的a.py移到当前a目录下
+        (当前目录是python11)    mv a.py a/
+
+
+    问题2：把桌面python11目录的b.py 重命名为body.py
+        (当前目录是python11)  mv b.py body.py
+
+
+    问题3：把桌面python11目录下的a目录移动到家目录下
+        (当前目录是python11)  mv a ~
+            
+        注意：移动文件夹的时候不需要 -r
+
+
+10、tree:    以树形结构显示文件列表
+
+    问题1：以树形方式显示家目录文件
+        tree ~
+
+    问题2：以树形方式显示根目录
+        tree /
+
+
+11、(仅做了解)history：查看使用过的历史命令
+    
+    !行号  表示执行做这一行历史命令
+     2075  cd a
+     2076  tree
+     2077  tree ~
+     2078  tree /
+     2079  tree
+     2080  ls
+     2081  history 
+    python@ubuntu:~/a$ !2080
+    ls
+    a.py  info_backup.txt  info.txt
+
+
+12、重定向命令 >   >>
+
+    将命令结果重定向到一个文件，本应显示在终端上的内容保存到指定文件中
+
+    问题1：把家目录的文件信息写到桌面的files.txt文件中   
+        (当前目录为桌面目录)  ls ~ > files.txt
+ 
+    问题2：把/python11目录下的文件信息追加到files.txt内容后面
+        tree python11/ >> files.txt 
+
+
+    注意：>输出重定向会覆盖原来的内容， >> 输出重定向会追加到文件尾部
+
+13、cat：     在终端直接查看文件内容, 或者合并文件内容
+    格式： cat [文件]
+
+    问题1：在桌面创建one.py, two.py文件，并且通过cat查看文件内容
+        touch one.py
+        touch two.py
+        cat one.py
+        cat two.py
+
+    问题2：把one.py, two.py合并到three.py文件中在通过cat查看
+        cat one.py two.py > three.py
+    
+    问题3：使用cat查看/opt/sublime_text/sublime.py文件内容
+        cat /opt/sublime_text/sublime.py
+       
+
+14、more 分屏显示文件内容
+
+    问题1：使用more查看/opt/sublime_text/sublime.py文件内容
+        more /opt/sublime_text/sublime.py
+
+        最先显示的是第一屏幕的内容
+        空格： 显示下一屏内容
+        回车： 显示下一行
+        数字+回车 ： 指定接下来的显示行数
+        b： 显示上一屏
+        q： 退出
+
+小练习：
+    1、在桌面创建test目录
+        （切换到桌面目录）     mkdir test
+    2、拷贝/opt/sublime_text目录下的文件，到桌面这个test目录中
+        （注意只拷贝文件，不复制目录）  cp /opt/sublime_text/* test
+
+
+15、| :  管道命令
+    管道：一个命令的输出可以通过管道作为另一个命令的输入
+
+    问题1：分别用ls和tree命令查看   根目录/的内容，且分屏显示
+        ls /
+        tree / | more
+
+
+16、ln：  链接命令
+
+    格式：ln [选项]  目标  链接名
+        选项 -s soft ，用于创建软链接
+
+    问题1：在桌面创建一个01.txt文件，对该文件创建软链接01_s_link.txt  
+        ln -s 01.txt 01_s_link.txt
+        
+    问题2：在桌面创建一个01.txt文件，对该文件创建硬链接01_link.txt 
+        ln 01.txt 01_link.txt
+
+    软链接与硬链接的相同点和区别：
+        1. 软链接和硬链接最终都指向同一个文件
+        2. 当源文件名删除，软链接变成无效链接，而硬链接还可以打开源文件内容
+        3. 文件详细列表显示时，软链接的文件类型是l ，而硬链接是-
+        4. (注意)软链接可以链接文件和目录，而硬连接只能链接文件
+
+
+杰4哥命令 ：
+sudo ln -sf cuda-10.0 cuda   给文件夹cuda-10.0创建一个软链接cuda
+
+sudo rm cuda  删除软链接
+
+
+
+
+
+
+17、grep：查找文本
+    格式：grep [选项] '搜索内容串' 文件名
+    选项：
+        -i: 不区分大小写
+        -n: 显示匹配行的行号
+        -v: 显示不匹配的行(取反)
+
+    问题1：把家目录中的文件信息写入桌面的home.txt中，并且查找D字符
+        (操作目录在桌面)
+        ls ~ > home.txt
+        grep 'D' home.txt
+
+
+    grep除了上面的格式，另外，还配合管道|使用：cat xxx.txt | grep "s"   表示xxx.txt中查找"s"
+    问题2：查看mysql是否运行（ps -aux 可以查看此刻已经启动的进程）
+        ps -aux | grep 'mysql'
+
+18、find： 查找文件
+    格式：  find [路径] [-name|size|perm] [匹配规则]
+
+    a. 按名称查找
+        问题1：查找test目录中扩展名是py的文件
+        find ./ -name '*.py'
+            
+
+    b. 按大小查找
+        问题2：查找test目录大于2M文件
+        find ./ -size '+2M'
+           
+
+    c. 按权限查找
+        find ./ -perm 权限值
+
+        问题3：查找出test目录中属主用户有读写权限，其他用户只有读权限的文件(其实要找的就是rw-r--r--这类文件)
+            rw-r--r--
+            find ./ -perm 644
+
+
+        问题4：查找出test目录中属主用户有读写执行权限，其他用户只有读和执行权限的文件(rwxr-xr-x) 
+            rwxr-xr-x
+            find ./ -perm 755
+
+其他：
+ctrl+alt+T 打开终端
+ctrl+shift+ "+"   放大字体窗口
+ctrl+ "-"   缩小字体窗口
+tab 自动补全

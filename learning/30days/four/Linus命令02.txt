@@ -1,0 +1,219 @@
+一、常用命令02
+
+1、chmod： 对文件或文件夹设置权限
+
+    a. 字母法
+        格式: chmod u/g/o/a/ +/-/= rwx 文件(顺序不要颠倒，先设置权限，再指定文件)
+
+        问题1：对test目录下的sublime.py文件的拥有者用户及同组用户添加执行权限，对其他用户添加写权限
+            chmod u+x,g+x,o+w sublime.py
+
+        问题2：对test目录下的sublime.py同组用户移除执行权限，对其他用户设置无权限
+            chmod g-x,o= sublime.py
+
+    b. 数字法
+        格式：chmod 权限数字表示法 文件名
+
+        问题3：对test目录的sublime.py所有用户均设置读写执行权限
+            chmod 777 sublime.py
+
+2、tar： 打包压缩命令
+    格式： tar [选项] 打包的文件名 要打包的文件
+
+    选项:
+        1. c: 创建打包文件，归档文件
+        2. v: 显示打包文件名称
+        3. f: 指定打包文件名称
+        4. x: 解包，拆包
+
+        5. z: 以gzip压缩或者解压文件
+        6. j: 以bzip2压缩或者解压文件
+        7. C: 解压到指定路径， -C选项后面解压后存放文件的目录
+
+    问题1：对test目录下的所有文件打包成my.tar
+    tar -cvf my.tar ./*
+
+    问题2: 对my.tar 文件进行拆包
+    tar -xvf my.tar
+
+
+    问题3: 对test目录下的所有文件打包且以gzip格式压缩成 my.tar.gz文件
+    tar -czvf my.tar.gz ./*
+
+    问题4: 对my.tar.gz解压及拆包
+    tar -xzvf my.tar.gz
+
+    问题5: 对test目录下的所有文件打包且以bzip2格式压缩成 my.tar.bz2文件
+    tar -cjvf my.tar.bz2 ./*
+
+    问题6: 对my.tar.bz2 解压及拆包到桌面到的test2目录中
+    tar -xjvf my.tar.bz2 -C ../test2/
+
+	1.ZIP文件，windows10和ubuntu系统都可以压缩和解压
+
+	这种文件是使用最广泛的一种压缩格式，它的优点在于支持不同平台都可以进行操作，缺点在于压缩率不高。
+
+	压缩指令：
+
+	#zip -r zip_name.zip directory_to_compress
+
+	解压指令：
+
+	#unzip zip_name.zip
+
+
+
+
+
+3、gzip： 压缩解压命令   使用该命令对文件进行压缩
+    格式： gzip [选项] 被压缩文件
+    选项：
+        -d: 表示解压
+
+    问题1： 对test目录下的sublime_text文件使用gzip格式压缩
+    gzip sublime_text
+
+    问题2：使用gzip命令解压文件sublime_text.gz
+    gzip -d sublime_text.gz
+
+
+4、which: 查找命令的位置 (仅做了解)
+
+
+5、与用户相关命令(who、exit、passwd、sudo) 
+    a.  who:  查看登录情况
+
+    b.  sudo -s 切换到超级用户 (su root)
+        再输入当前用户(python)的密码，就可以切换到超级用户
+
+    c.  exit:  退出登录
+        1、如果是ubuntu图形界面打开的命令终端，退出当前终端
+        2、如果是使用ssh远程登录，退出登录账户
+        3、如果是切换后的登录用户，退出则返回上一个登录账号
+
+    d.  passwd: 设置密码
+        格式: sudo passwd 用户名
+
+    e.  sudo:  superuser do : 超级用户授权当前用户执行命令
+        格式： sudo command
+
+        问题1： 在/opt目录下创建mysoft文件夹
+            sudo mkdir /opt/mysoft/
+
+
+6、(仅做了解)关机相关命令(reboot、shutdown)
+    a.  reboot: 重启
+    b.  shutdown: 关机
+
+            1.  shutdown -r now：  立即重启
+            2.  shutdown -h now：  立即关机
+            3.  shutdown -h 20:25：  指定某个时间关机
+            4.  shutdown -h +10：    10分钟后关机
+
+
+二、软件安装
+1、离线安装
+    a.  直接解压gzip或bzip2压缩文件
+    tar -xzvf xxx.tar.gz 
+    tar -xjvf xxx.tar.bz2
+
+    b.  通过ubuntu支持的安装包进行安装
+        ubuntu支持deb格式，deb格式是Debian系统(包含Debian和Ubuntu)专属安装包格式，好比android的xxx.apk
+    格式：
+        sudo dpkg -i xxx.deb              # 安装某个包
+        sudo dpkg -r package              # 删除某个包
+
+2、通过apt-get包管理器从软件源中在线安装(最常用的方式)
+    更新软件源  
+        清华大学开源软件镜像站: https://mirrors.tuna.tsinghua.edu.cn/ 
+
+    apt-get 常用命令
+
+        在线安装命令格式： sudo apt-get install 安装包、程序名
+        删除包的命令格式:  sudo apt-get remove 删除包、程序名
+        更新源(更新软件源)： sudo apt-get update               
+
+        问题1：安装sl包，并且演示效果
+        sudo apt-get install sl
+
+
+三、ssh服务
+1、ssh介绍
+    ssh(Secure Shell)：安全外壳，安全网络协议
+    SSH是目前可靠的，专为远程登录会话和其他网络服务提供安全性的协议。常用于远程登录，以及用户之间进行资料拷贝。利用SSH协议可以有效防止远程管理过程中的信息泄露问题
+
+2、远程登录格式：ssh 用户名@IP
+
+    问题1：通过远程登录方式，在虚拟机ubuntu桌面上创建hello.txt文件
+    ssh python@192.168.153.177
+    python@ubuntu:~$ cd Desktop/
+    python@ubuntu:~/Desktop$ touch hello.txt
+
+
+
+3、scp(secure copy)
+    安全拷贝，基于ssh协议的远程文件拷贝命令，拷贝目录需要加 -r 选项
+    注意：windows不支持该命令
+
+    1、安全拷贝本地文件到远程主机
+        格式：scp 文件名 远程用户名@远程IP:远程目录
+
+    2、安全拷贝远程主机文件到本地
+        格式：scp 远程用户名@远程IP:远程目录 本地目录 
+
+
+    问题1：拷贝远程ubuntu虚拟机桌面的remote目录下的r.txt到本地桌面
+    （应该先创建remote，再创建r.txt，最后进行远程拷贝）
+    scp python@192.168.103.108:~/Desktop/remote/r.txt ~/Desktop
+        
+
+    问题2：拷贝本地hello.txt到远程ubuntu虚拟机桌面的remote目录下
+    scp hello.txt python@192.168.103.108:~/Desktop/remote
+
+
+4、FileZilla图形界面实现远程拷贝(sftp基于ssh)
+
+
+四、vim软件的使用
+1、三种工作模式
+    1、命令模式：打开文件，默认进入此模式，通过命令的方式，通过命令的方式对文档进行编辑，比如复制，粘贴，删除行等操作
+    2、编辑模式：在命令模式中按i或者a进入编辑模式，可以输入文本进行编辑文档。按‘esc’退出编辑模式，进入命令模式
+    3、末行模式：在命令模式按‘:’进入末行模式，在末行模式中可实现查找替换文本、保存退出文件等操作，按‘esc’进入命令模式
+
+2、命令模式下的vim操作(了解)
+    a. 进入编辑模式
+        1. i或者a 
+    b. 移动光标
+        1. 方向箭头(上下左右)
+        2. hjkl(上下左右)
+        3. G和gg(G文档最后一行，gg文档首行，数字G跳到指定行)
+    c. 删除命令
+        1. dd 或者 数字dd(dd删除所在行，5dd删除指定行数，从光标所在行开始计算)
+
+    d. 撤销与恢复命令
+        1. u   (撤销)
+        2. ctrl+l+r   (恢复)
+
+    e. 复制粘贴命令
+        1. yy 或者 数字yy(yy复制当前行，5yy复制5行)
+
+        2. p 或者 数字p (p在光标所在位置向下新开一行粘贴, 5p 粘贴5次)
+
+    问题1：复制第2行内容，放在末尾进行粘贴
+    2G
+    yy
+    G
+    p
+
+    问题2：删除当前光标所在行，及下2行的数据
+    3dd
+
+
+3、末行模式下的简单操作
+    保存和退出
+        命令模式下按shift+；进入末行模式
+        1. w  只保存
+        2. q 退出，没保存会询问
+        3. wq: 保存退出(或者x)
+
+        

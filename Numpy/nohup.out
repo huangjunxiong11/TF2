@@ -1,0 +1,29 @@
+[I 14:18:32.178 NotebookApp] JupyterLab extension loaded from /home/huangjx/anaconda3/lib/python3.7/site-packages/jupyterlab
+[I 14:18:32.178 NotebookApp] JupyterLab application directory is /home/huangjx/anaconda3/share/jupyter/lab
+[I 14:18:32.180 NotebookApp] 启动notebooks 在本地路径: /home/huangjx/Projects/git-pro/TF2/TF2/Numpy
+[I 14:18:32.180 NotebookApp] 本程序运行在: http://localhost:8888/?token=89352cc1e135cb4cf83704a0fa32cf695059210745e348f0
+[I 14:18:32.180 NotebookApp]  or http://127.0.0.1:8888/?token=89352cc1e135cb4cf83704a0fa32cf695059210745e348f0
+[I 14:18:32.180 NotebookApp] 使用control-c停止此服务器并关闭所有内核(两次跳过确认).
+[C 14:18:32.205 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/huangjx/.local/share/jupyter/runtime/nbserver-7041-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=89352cc1e135cb4cf83704a0fa32cf695059210745e348f0
+     or http://127.0.0.1:8888/?token=89352cc1e135cb4cf83704a0fa32cf695059210745e348f0
+[E 14:18:33.533 NotebookApp] Could not open static file ''
+[W 14:18:33.647 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 50.21ms referer=http://localhost:8888/tree?token=89352cc1e135cb4cf83704a0fa32cf695059210745e348f0
+[W 14:18:33.743 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 3.19ms referer=http://localhost:8888/tree?token=89352cc1e135cb4cf83704a0fa32cf695059210745e348f0
+[I 14:18:39.763 NotebookApp] Creating new notebook in 
+[W 14:18:41.539 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.22ms referer=http://localhost:8888/notebooks/%E6%9C%AA%E5%91%BD%E5%90%8D1.ipynb?kernel_name=python3
+[W 14:18:41.635 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 2.04ms referer=http://localhost:8888/notebooks/%E6%9C%AA%E5%91%BD%E5%90%8D1.ipynb?kernel_name=python3
+[I 14:18:42.285 NotebookApp] Kernel started: 731742ef-834b-4fab-96c8-ed14c20c4837
+[I 14:18:43.273 NotebookApp] Adapting from protocol version 5.1 (kernel 731742ef-834b-4fab-96c8-ed14c20c4837) to 5.3 (client).
+[I 14:20:42.217 NotebookApp] Saving file at /未命名1.ipynb
+2020-04-26 14:21:06.593678: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-26 14:21:06.752693: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3000000000 Hz
+2020-04-26 14:21:06.753687: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x557789dfa490 executing computations on platform Host. Devices:
+2020-04-26 14:21:06.753776: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+[I 14:22:42.189 NotebookApp] Saving file at /未命名1.ipynb
+[I 14:24:42.190 NotebookApp] Saving file at /未命名1.ipynb
+[I 16:33:54.672 NotebookApp] Starting buffering for 731742ef-834b-4fab-96c8-ed14c20c4837:809d54b39a4c412785c0d91a1eea4342

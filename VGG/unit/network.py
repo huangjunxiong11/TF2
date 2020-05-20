@@ -30,7 +30,7 @@ network_VGG11 = Sequential([
     layers.Flatten(),  # 拉直 7*7*512
     # 第九层
     layers.Dense(1024, activation='relu'),
-    layers.Dropout(rate=0.5),
+    layers.Dropout(rate=0.5),tf.keras.layers.
     # 第十层
     layers.Dense(128, activation='relu'),
     layers.Dropout(rate=0.5),

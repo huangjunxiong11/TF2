@@ -1,7 +1,5 @@
 # coding=utf-8
 from tensorflow.keras import layers, optimizers, datasets, Sequential, metrics  # 导入TF子库
-import tensorflow as tf
-from preprocess import db
 
 
 # 2.网络搭建

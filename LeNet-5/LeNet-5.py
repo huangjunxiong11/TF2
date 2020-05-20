@@ -1,8 +1,3 @@
-"""
-author: AI JUN
-function: LeNet-5 by python
-data: 2020/3/12
-"""
 import tensorflow as tf
 from tensorflow.keras import datasets, layers, optimizers, Sequential, metrics, losses
 

@@ -10,6 +10,7 @@ def normalize(x, mean=img_mean, std=img_std):
     return x
 
 
+
 def preprocess(image_path, label):
     # x: 图片的路径，y：图片的数字编码
     x = tf.io.read_file(image_path)  # 读入图片，返回string类型的Tensor,0维,JPEG编码的图像.
